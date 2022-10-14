@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.profil{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+nav{
+    font-size: 1.5em;
+    color: black;
+    }
+a{
+        text-decoration: none;
+        color:white;
+    }
+a:visited{
+        color:rgb(0, 0, 0);
+     }
+header{
+        padding-bottom: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(226, 27, 103, 0.63);
+        width: 100vw;
+        height: auto;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+}
+.nom{
+        color:white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.background{
+    text-align: center;
+    background-image: url(./../photo\ faith/cakefaith2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    z-index: 0;
+}
+.milieu{
+    position: relative;
+    top: 30vh;
+}
+.countdown{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.63);
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0 20px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#clockdiv{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: rgba(226, 27, 103, 0.63);
+    display: inline-block;
+}
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: rgba(226, 27, 103, 0.63);
+    display: inline-block;
+}
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
