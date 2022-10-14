@@ -97,8 +97,4 @@ header{
         position: relative;
         top: 0;
     }
-    #clockdiv{
-        display: flex;
-        flex-wrap: nowrap;
-    }
 }
