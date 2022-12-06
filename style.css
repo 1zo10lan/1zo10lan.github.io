@@ -1,0 +1,285 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+li {
+  font-size: larger;
+}
+nav li a {
+  text-decoration: none;
+  color: snow;
+}
+#logo {
+  width: 200px;
+  height: 200px;
+  padding-top: 70px;
+}
+#menu-bar{
+  display: none;
+}
+header label{
+  font-size: 18px;
+  color: snow;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  
+}
+header {
+  position: relative;
+  width: 100%;
+  background-image: url(./sary/iPhone_53f59_IMG_5506.JPG);
+  background-size: cover;
+  animation: cover 30s infinite forwards;
+}
+@keyframes cover {
+  0% {
+    background-image: url(./sary/iPhone_53f59_IMG_5505.JPG);
+  }
+  25% {
+    background-image: url(./sary/iPhone_53f59_IMG_5515.JPG);
+  }
+  50% {
+    background-image: url(./sary/iPhone_53f59_IMG_5506.JPG);
+  }
+  75% {
+    background-image: url(./sary/iPhone_53f59_IMG_5514.JPG);
+  }
+  100% {
+    background-image: url(./sary/iPhone_53f59_IMG_5507.JPG);
+  }
+}
+nav {
+  position: fixed;
+  top: 0;
+  background-color: rgba(30, 143, 255, 0.616);
+  backdrop-filter: blur(3px);
+  height: 50px;
+  width: 100%;
+  border-bottom: solid 2px black;
+  z-index: 1;
+}
+.header_div {
+  position: relative;
+  width: 950px;
+  padding: 70px;
+  margin: 0px auto;
+}
+header p,
+main p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header a,
+main a {
+  color: black;
+}
+.header_info {
+  background-color: rgba(0, 0, 0, 0.301);
+  backdrop-filter: blur(1px);
+  padding: 20px;
+  margin-top: 70px;
+  color: snow;
+}
+main img {
+  width: 300px;
+  height: 300px;
+}
+main {
+  position: relative;
+  width: 950px;
+  padding: 40px;
+  margin: 20px auto;
+}
+main {
+  padding-top: 20px;
+}
+.location {
+  margin-top: 50px;
+  color: dodgerblue;
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+footer {
+  background-color: rgb(0, 0, 0);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: snow;
+}
+footer p {
+  text-align: center;
+}
+footer li a {
+  color: snow;
+}
+footer img {
+  border-radius: 10%;
+}
+#logowhatsapp, #logofacebook {
+  width: 50px; 
+  height: 40px;
+}
+/* .dmkt-whatsapp-button{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+}
+.dmkt-whatsapp-button .fa-whatsapp:before{
+    color: #fff;
+    border-radius: 50%;
+    font-size: 50px;
+    background-color: #25D366;
+    padding: 15px;
+}
+.dmkt-whatsapp-button:hover{
+    opacity: 0.8;
+} */
+@media only screen and (max-width: 1110px) {
+  header {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .header_div {
+    padding: 0px;
+    width: 800px;
+    padding-top: 10px;
+  }
+  .header_info {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  main {
+    zoom: 0.9;
+    margin: 20px auto;
+  }
+  main {
+    padding-top: 0.1px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  header {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .header_div {
+    padding: 0px;
+    width: 500px;
+    transform: scale(0.9);
+    padding-top: 10px;
+  }
+  .header_info {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  main {
+    zoom: 0.9;
+    margin: 20px auto;
+    width: 600px;
+  }
+  main {
+    padding-top: 0.1px;
+  }
+  main img {
+    width: 175px;
+    height: 175px;
+  }
+  #logo{
+    transform: scale(0.8);
+  }
+  footer {
+    font-size: small;
+  }
+  #logowhatsapp, #logofacebook {
+    width: 40px; 
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header label{
+    display: initial;
+  }
+  header {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  header nav ul li.navText {
+    display: none;
+    position: relative;
+    top: 100%;
+    right: 0px;
+    text-align: center;
+    width: 100vw;
+    border: 2px solid black;
+    background-color: black;
+    padding: 0px;
+    margin-top: -25px;   
+  }
+  .header_div {
+    padding: 0px;
+    width: 230px;
+    transform: scale(0.7);
+    padding-top: 50px;
+  }
+  li{
+    font-size: medium;
+  }
+  .header_info {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    height: max-content;
+  }
+  div .header_text{
+    display: none;
+  }
+  #menu-bar:checked ~ .navText {
+    display: initial;
+  }
+  main {
+    zoom: 0.9;
+    margin: 20px auto;
+    width: 250px;
+  }
+  main {
+    padding-top: 0.1px;
+  }
+  main img {
+    width: 175px;
+    height: 175px;
+  }
+  #logo{
+    transform: scale(0.6);
+  }
+  footer {
+    font-size: small;
+  }
+  footer ul{
+    flex-direction: column;
+  }
+  #logowhatsapp, #logofacebook {
+    width: 30px; 
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 280px){
+  header nav ul li.navText{
+    right: 41px;
+  }
+}
+
