@@ -254,7 +254,7 @@ footer img {
   main {
     zoom: 0.9;
     margin: 20px auto;
-    width: 250px;
+    width: 300px;
   }
   main {
     padding-top: 0.1px;
@@ -265,10 +265,7 @@ footer img {
   }
   #logo {
     transform: scale(0.6);
-  }
-  /* footer {
-        font-size: small;
-    } */
+  } 
   footer {
     font-size: small;
   }
@@ -279,6 +276,11 @@ footer img {
   #logofacebook {
     width: 30px;
     height: 20px;
+  }
+}
+@media only screen and (max-width: 360px){
+  nav ul li.navText{
+    right: 1.5px;
   }
 }
 @media only screen and (max-width: 280px) {
