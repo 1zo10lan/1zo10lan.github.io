@@ -27,32 +27,33 @@ nav li a {
   height: 200px;
   padding-top: 70px;
 }
-#menu-bar{
+#menu-bar {
   display: none;
 }
 nav {
   position: fixed;
   top: 0;
   background-color: rgba(30, 143, 255, 0.616);
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   height: 50px;
   width: 100%;
   border-bottom: solid 2px black;
   z-index: 1;
 }
-header label{
+header label {
   font-size: 18px;
   color: snow;
   cursor: pointer;
   display: none;
   position: absolute;
   top: 15px;
-  right: 50px;  
+  right: 50px;
 }
 header {
   position: relative;
   width: 100%;
-   background-image: url(./sary/maki\(2\).JPG);
+  background-image: url(./sary/NosyKomba/maki\(2\).JPG);
   background-size: cover;
   background-position: center;
   background-position-y: 30%;
@@ -60,7 +61,7 @@ header {
 }
 @keyframes cover {
   100% {
-    background-image: url(./sary/maki\(3\).JPG);
+    background-image: url(./sary/NosyKomba/maki\(3\).JPG);
     background-position-y: 30%;
   }
 }
@@ -88,7 +89,9 @@ main a {
 }
 .header_info {
   background-color: rgba(0, 0, 0, 0.301);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 3px;
   padding: 20px;
   margin-top: 70px;
   color: snow;
@@ -102,8 +105,6 @@ main {
   width: 950px;
   padding: 40px;
   margin: 20px auto;
-}
-main {
   padding-top: 20px;
 }
 .location {
@@ -127,26 +128,9 @@ footer li a {
 footer img {
   border-radius: 10%;
 }
-#logowhatsapp, #logofacebook {
-  width: 50px; 
-  height: 40px;
+.fa-whatsapp{
+    font-size: 22px;
 }
-/* .dmkt-whatsapp-button{
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 100;
-}
-.dmkt-whatsapp-button .fa-whatsapp:before{
-    color: #fff;
-    border-radius: 50%;
-    font-size: 50px;
-    background-color: #25D366;
-    padding: 15px;
-}
-.dmkt-whatsapp-button:hover{
-    opacity: 0.8;
-} */
 @media only screen and (max-width: 1110px) {
   header {
     padding-bottom: 50px;
@@ -162,7 +146,7 @@ footer img {
     margin-right: 50px;
   }
   main {
-    zoom: 0.9;
+    transform: scale(0.9);
     margin: 20px auto;
   }
   main {
@@ -185,35 +169,30 @@ footer img {
     margin-right: 50px;
   }
   main {
-    zoom: 0.9;
+    transform: scale(0.9);
     margin: 20px auto;
     width: 600px;
-  }
-  main {
     padding-top: 0.1px;
   }
   main img {
     width: 175px;
     height: 175px;
   }
-  #logo{
+  #logo {
     transform: scale(0.8);
   }
   footer {
     font-size: small;
   }
-  #logowhatsapp, #logofacebook {
-    width: 40px; 
-    height: 30px;
-  }
 }
 @media only screen and (max-width: 700px) {
-  header label{
+  header label {
     display: initial;
   }
   header {
     padding-bottom: 0px;
     padding-top: 0px;
+    margin-bottom: 0px;
   }
   header nav ul li.navText {
     display: none;
@@ -225,15 +204,15 @@ footer img {
     border: 2px solid black;
     background-color: black;
     padding: 0px;
-    margin-top: -25px;     
+    margin-top: -25px;
   }
   .header_div {
     padding: 0px;
     width: 230px;
     transform: scale(0.7);
-    padding-top: 50px;
+    padding-top: 70px;
   }
-  li{
+  li {
     font-size: medium;
   }
   .header_info {
@@ -242,55 +221,48 @@ footer img {
     margin-top: 5px;
     height: max-content;
   }
-  div .header_text{
+  div .header_text {
     display: none;
   }
   #menu-bar:checked ~ .navText {
     display: initial;
   }
   main {
-    zoom: 0.9;
+    transform: scale(0.9);
     margin: 20px auto;
+    padding: 0px;
     width: 300px;
-  }
-  main {
     padding-top: 0.1px;
   }
   main img {
     width: 175px;
     height: 175px;
   }
-  .location {
-    margin-top: 0;
-  }
-  #logo{
+  #logo {
     transform: scale(0.6);
   }
   footer {
     font-size: small;
   }
-  footer ul{
+  footer ul {
     flex-direction: column;
   }
-  #logowhatsapp, #logofacebook {
-    width: 30px; 
-    height: 20px;
+
+  @media only screen and (max-width: 360px) {
+    header nav ul li.navText {
+      right: 1.5px;
+    }
   }
-}
-@media only screen and (max-width: 360px){
-  header nav ul li.navText{
-    right: 1.5px;
-  }
-}
-@media only screen and (max-width: 280px){
-  header nav ul li.navText{
-    right: 41.9px;
-  }
-  main{
-    width: 200px;
-  }
-  main img {
-    width: 150px;
-    height: 150px;
+  @media only screen and (max-width: 280px) {
+    header nav ul li.navText {
+      right: 41.9px;
+    }
+    main {
+      width: 200px;
+    }
+    main img {
+      width: 150px;
+      height: 150px;
+    }
   }
 }
