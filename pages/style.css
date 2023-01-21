@@ -41,7 +41,8 @@ nav {
   position: fixed;
   top: 0;
   background-color: green;
-  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   height: 50px;
   width: 100%;
   border-bottom: solid 2px black;
@@ -61,7 +62,7 @@ header a {
 }
 header a:hover {
   color: black;
-  zoom: 1.5;
+  transform: scale(1.5);
   font-style: italic;
 }
 header {
@@ -105,6 +106,8 @@ main {
 main p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: larger;
 }
 main a {
   color: black;
@@ -117,7 +120,7 @@ main a {
 }
 footer {
   background-color: rgb(0, 0, 0);
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
   padding-top: 20px;
   padding-bottom: 10px;
   color: snow;
@@ -140,37 +143,17 @@ footer ul {
 footer img {
   border-radius: 10%;
 }
-#logowhatsapp,
-#logofacebook {
-  width: 50px;
-  height: 40px;
+.fa-whatsapp{
+  font-size: 22px;
 }
-/* .dmkt-whatsapp-button{
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 100;
-}
-.dmkt-whatsapp-button .fa-whatsapp:before{
-    color: #fff;
-    border-radius: 50%;
-    font-size: 50px;
-    background-color: #25D366;
-    padding: 15px;
-}
-.dmkt-whatsapp-button:hover{
-    opacity: 0.8;
-} */
 @media only screen and (max-width: 1110px) {
   header {
     padding-bottom: 50px;
     padding-top: 50px;
   }
   main {
-    zoom: 0.9;
+    transform: scale(0.9);
     margin: 20px auto;
-  }
-  main {
     padding-top: 0.1px;
   }
 }
@@ -188,11 +171,9 @@ footer img {
     margin-top: 5px;
   }
   main {
-    zoom: 0.9;
+    transform: scale(0.9);
     margin: 20px auto;
     width: 500px;
-  }
-  main {
     padding-top: 0.1px;
   }
   main img {
@@ -204,11 +185,6 @@ footer img {
   }
   footer {
     font-size: small;
-  }
-  #logowhatsapp,
-  #logofacebook {
-    width: 40px;
-    height: 30px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -252,11 +228,9 @@ footer img {
     display: initial;
   }
   main {
-    zoom: 0.9;
+    transform: scale(0.9);
     margin: 20px auto;
     width: 300px;
-  }
-  main {
     padding-top: 0.1px;
   }
   main img {
@@ -265,21 +239,16 @@ footer img {
   }
   #logo {
     transform: scale(0.6);
-  } 
+  }
   footer {
     font-size: small;
   }
   footer ul {
     flex-direction: column;
   }
-  #logowhatsapp,
-  #logofacebook {
-    width: 30px;
-    height: 20px;
-  }
 }
-@media only screen and (max-width: 360px){
-  nav ul li.navText{
+@media only screen and (max-width: 360px) {
+  nav ul li.navText {
     right: 1.5px;
   }
 }
@@ -298,7 +267,7 @@ footer img {
     margin-top: 15px;
   }
   main {
-    zoom: 0.9;
+    transform: scale(0.9);
     margin: 20px auto;
     width: 220px;
   }
