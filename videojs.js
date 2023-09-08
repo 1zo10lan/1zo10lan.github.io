@@ -5,10 +5,10 @@ var navbar = document.querySelector("header")
 function myFunction() {
   if (video.paused) {
     video.play();
-    btn.innerHTML = "Play";
+    btn.innerHTML = "II";
   } else {
     video.pause();
-    btn.innerHTML = "II";
+    btn.innerHTML = "Play";
   }
 }
 
