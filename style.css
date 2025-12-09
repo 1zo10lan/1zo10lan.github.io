@@ -53,7 +53,7 @@ header label {
 header {
   position: relative;
   width: 100%;
-  background-image: url(./sary/NosyKomba/maki\(2\).JPG);
+  background-image: url(./sary/NosyKomba/maki(2).JPG);
   background-size: cover;
   background-position: center;
   background-position-y: 30%;
@@ -61,7 +61,7 @@ header {
 }
 @keyframes cover {
   100% {
-    background-image: url(./sary/NosyKomba/maki\(3\).JPG);
+    background-image: url(./sary/NosyKomba/maki(3).JPG);
     background-position-y: 30%;
   }
 }
@@ -266,4 +266,5 @@ footer img {
     }
   }
 }
+
 
