@@ -66,7 +66,7 @@ header label {
 header {
   width: 100%;
   min-height: 65vh;
-  background-image: url("./sary/NosyIranja/nosy_iranja.JPG");
+  /* background-image: url("./sary/NosyIranja/nosy_iranja.JPG"); */
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -203,6 +203,7 @@ footer a {
     gap: 15px;
   }
 }
+
 
 
 
