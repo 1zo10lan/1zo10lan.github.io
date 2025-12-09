@@ -62,14 +62,14 @@ header {
 @keyframes cover {
   100% {
     background-image: url(./sary/NosyKomba/maki(3).JPG);
-    background-position-y: 30%;
+    background-position: center 30%;
   }
 }
 .header_div {
   position: relative;
   width: 950px;
   padding: 70px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 header p,
 main p {
@@ -190,7 +190,8 @@ footer img {
     display: initial;
   }
   header {
-    min-height: 300px;
+    min-height: 60vh;
+    padding: 0;
   }
   header nav ul li.navText {
     display: none;
@@ -205,10 +206,9 @@ footer img {
     margin-top: -25px;
   }
   .header_div {
-    padding: 0px;
     width: 230px;
-    transform: scale(0.7);
-    padding-top: 70px;
+    transform: scale(0.8);
+    padding: 30px 0;
   }
   li {
     font-size: medium;
@@ -264,6 +264,7 @@ footer img {
     }
   }
 }
+
 
 
 
