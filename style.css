@@ -190,9 +190,7 @@ footer img {
     display: initial;
   }
   header {
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-bottom: 0px;
+    min-height: 300px;
   }
   header nav ul li.navText {
     display: none;
@@ -266,5 +264,6 @@ footer img {
     }
   }
 }
+
 
 
