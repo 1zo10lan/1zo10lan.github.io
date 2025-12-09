@@ -72,10 +72,10 @@ header {
 
 @keyframes header-slide {
   0% {
-    background-image: url("./sary/NosyKomba/maki(2).JPG");
+    background-image: url("./sary/NosyIranja/nosy_iranja.JPG");
   }
   100% {
-    background-image: url("./sary/NosyKomba/maki(3).JPG");
+    background-image: url("./sary/CompagnieMillot/cacao.JPG");
   }
 }
 
@@ -202,4 +202,5 @@ footer a {
     gap: 15px;
   }
 }
+
 
