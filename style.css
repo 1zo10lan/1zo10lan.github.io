@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -61,12 +65,12 @@ header label {
 
 header {
   width: 100%;
-  min-height: 70vh;
+  min-height: 65vh;
   background-image: url("./sary/NosyIranja/nosy_iranja.JPG");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  padding-top: 80px;
+  padding-top: 90px;
   animation: header-slide 20s infinite alternate ease-in-out;
 }
 
@@ -82,14 +86,15 @@ header {
 .header_div {
   max-width: 900px;
   margin: 0 auto;
-  padding: 60px 20px;
+  width: 90%;
+  padding: 20px 0;
 }
 
 .header_info {
   background-color: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(3px);
   border-radius: 4px;
-  padding: 25px;
+  padding: 15px;
   color: snow;
 }
 
@@ -144,7 +149,6 @@ footer a {
 }
 
 @media only screen and (max-width: 700px) {
-  /* NAV MOBILE */
   header label {
     display: initial;
   }
@@ -165,7 +169,6 @@ footer a {
     display: flex;
   }
 
-  /* HEADER */
   header {
     min-height: 65vh;
     padding-top: 90px;
@@ -185,7 +188,6 @@ footer a {
     display: none;
   }
 
-  /* MAIN */
   main {
     width: 95%;
     padding: 0;
@@ -196,12 +198,12 @@ footer a {
     height: 160px;
   }
 
-  /* FOOTER */
   footer ul {
     flex-direction: column;
     gap: 15px;
   }
 }
+
 
 
 
