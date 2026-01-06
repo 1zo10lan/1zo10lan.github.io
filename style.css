@@ -53,7 +53,7 @@ header label {
 header {
   position: relative;
   width: 100%;
-  background-image: url(./sary/NosyKomba/maki(2).JPG);
+  background-image: url(./sary/NosyKomba/maki\(2\).JPG);
   background-size: cover;
   background-position: center;
   background-position-y: 30%;
@@ -61,15 +61,15 @@ header {
 }
 @keyframes cover {
   100% {
-    background-image: url(./sary/NosyKomba/maki(3).JPG);
-    background-position: center 30%;
+    background-image: url(./sary/NosyKomba/maki\(3\).JPG);
+    background-position-y: 30%;
   }
 }
 .header_div {
   position: relative;
   width: 950px;
   padding: 70px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 header p,
 main p {
@@ -190,8 +190,9 @@ footer img {
     display: initial;
   }
   header {
-    min-height: 60vh;
-    padding: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
   }
   header nav ul li.navText {
     display: none;
@@ -206,9 +207,10 @@ footer img {
     margin-top: -25px;
   }
   .header_div {
+    padding: 0px;
     width: 230px;
-    transform: scale(0.8);
-    padding: 30px 0;
+    transform: scale(0.7);
+    padding-top: 70px;
   }
   li {
     font-size: medium;
@@ -264,6 +266,3 @@ footer img {
     }
   }
 }
-
-
-
